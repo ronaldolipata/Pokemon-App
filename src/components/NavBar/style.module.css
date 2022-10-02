@@ -1,0 +1,66 @@
+.navBar {
+  display: none;
+}
+
+.navBarMobile {
+  max-width: 10rem;
+  margin-inline: auto;
+  border-radius: 3px;
+  margin-top: 3rem;
+}
+
+.navBarMobileList {
+  display: none;
+  background-color: hsl(226, 23%, 18%);
+  height: 12rem;
+  overflow-x: scroll;
+}
+
+.navBarMobileItem {
+  padding: 0.5rem 0 0.5rem 1rem;
+  text-align: left;
+}
+
+.selectTypeButton {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.navBarMobileItem:nth-child(odd) {
+  background-color: hsl(226, 23%, 20%);
+}
+
+.navBarMobileItem:first-child {
+  padding-top: 1rem;
+}
+
+.navBarMobileItem:last-child {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 64em) {
+  .navBar {
+    background-color: hsl(226, 23%, 18%);
+    display: block;
+    min-width: 24rem;
+    height: 100vh;
+    padding-top: 6rem;
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+  }
+
+  .navBarMobile {
+    display: none;
+  }
+
+  .navBarList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+  }
+}

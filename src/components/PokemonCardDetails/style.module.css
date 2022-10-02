@@ -1,0 +1,64 @@
+.id {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3rem 0;
+  padding: 1rem;
+}
+
+.cardItemImage {
+  width: 15rem;
+  height: 15rem;
+  margin-inline: auto;
+}
+
+.cardTypesContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.cardTypes {
+  margin-right: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.abilityContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 100%;
+  padding-top: 1rem;
+}
+
+.abilitySubContainer {
+  background-color: hsl(226, 23%, 18%);
+  width: 23rem;
+  border-radius: 3px;
+  padding: 1.5rem 2rem;
+  margin: 1rem;
+}
+
+.abilityName {
+  margin-bottom: 1rem;
+}
+
+.abilityDetails {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+@media (min-width: 64em) {
+  .mainContainer {
+    display: flex;
+  }
+}

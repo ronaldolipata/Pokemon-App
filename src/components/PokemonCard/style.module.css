@@ -1,0 +1,35 @@
+.cardItem {
+  background-color: hsl(226, 23%, 18%);
+  padding: 2rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cardTitle {
+  margin: 1rem 0;
+}
+
+.cardItemImage {
+  width: 15rem;
+  height: 15rem;
+}
+
+.cardTypesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cardTypes {
+  margin-right: 0.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cardTypes:last-child {
+  margin-right: 0;
+}
