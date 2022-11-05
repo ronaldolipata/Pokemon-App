@@ -9,16 +9,16 @@ import App from './App';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  // <React.StrictMode>
-  <HashRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="*" element={<NotFoundView />} />
-      <Route path="/type/:type" element={<PokemonsTypeView />} />
-      <Route path="/pokemon/:name" element={<PokemonCardDetails />} />
-    </Routes>
-  </HashRouter>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="*" element={<NotFoundView />} />
+        <Route path="/type/:type" element={<PokemonsTypeView />} />
+        <Route path="/pokemon/:name" element={<PokemonCardDetails />} />
+      </Routes>
+    </HashRouter>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
