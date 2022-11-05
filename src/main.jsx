@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import PokemonsTypeView from './components/PokemonsTypeView';
 import PokemonCardDetails from './components/PokemonCardDetails';
 import NotFoundView from './components/NotFoundView';
@@ -10,14 +10,14 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="*" element={<NotFoundView />} />
       <Route path="/type/:type" element={<PokemonsTypeView />} />
       <Route path="/pokemon/:name" element={<PokemonCardDetails />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   // </React.StrictMode>
 );
 
